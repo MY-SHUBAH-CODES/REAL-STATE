@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{%block content%}
+<h1 style="font-style:Serif;text-align:center;margin-top:10px;font-weight: bold;text-decoration: underline;">Add Plot Details</h1>
+
+<div class="container" style="align-items: center;">
+    <form action="/add_plot/" method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        {%for i in form%}
+        <div class="form-group">
+            <label for="img1" style="font-size:25px;font-style:Serif;font-weight: bold;">{{i.label}}:</label>
+            <div class="textarea" style="vertical-align:top;">{{i}}</div>
+            {%endfor%}
+            <br>
+
+            <button type="submit" class="btn btn-info"
+                style="background-color: green;font-style: Serif;font-size:20px;">Save</button>
+
+        </div>
+
+    </form>
+</div>
+
+{%endblock%}
