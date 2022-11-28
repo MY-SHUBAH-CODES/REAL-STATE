@@ -139,3 +139,7 @@ EMAIL_HOST_PASSWORD=''
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" # white noise
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+

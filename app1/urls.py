@@ -11,6 +11,11 @@ urlpatterns = [
     path('',views.home,name="home"),
     path('add_land/',views.addland,name='addland'),
     path('add_plot/',views.addplot,name='addplot'),
+    path('allland/',views.allland,name='allland'),
+    path('allland/<int:pk>/',views.landdetails,name='landdetails'),
+
+
+
 
     
     

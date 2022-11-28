@@ -1,0 +1,103 @@
+{% extends 'base.html'%}
+{%block content%}
+<section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic1}}" alt="">
+                        </div>
+                        <figcaption>
+                            
+                            <span class="credit">Photo: Tim Marshall</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic2}}" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic3}}" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic4}}" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic1}}" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.land_pic1}}" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="/media/{{data.land_pic1}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="/media/{{data.land_pic2}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="/media/{{data.land_pic3}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="/media/{{data.land_pic4}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-5"><img src="/media/{{data.land_pic5}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-6"><img src="/media/{{data.land_pic1}}" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{%endblock%}
