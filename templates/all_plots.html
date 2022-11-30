@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{%block content%}
+
+<div class="row" style="margin-top:50px;">
+{% for i in data%}
+  <div class="column">
+    <div class="card">
+    <img src="/media/{{i.plot_pic1}}" alt=""width="400" height="250">
+      <h3>{{i.plot_description}}</h3>
+      <a href="{% url 'plotdetails' i.id%}" class="btn" style="background-color:brown;height:45px;width:90px;margin-left: 140px;font-weight:bold;color: black;">Explore</a>
+    </div>
+  </div>
+  {%endfor%}
+</div>
+{%endblock%}

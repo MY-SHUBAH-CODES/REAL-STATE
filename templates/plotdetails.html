@@ -1,0 +1,105 @@
+{% extends 'base.html'%}
+{%block content%}
+<section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic1}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            <div class="w3-container">
+                                <h2 style="font-weight:bold;" >Top View</h2>
+                                <p style="font-size: 20px;">there is one rode fron left side</p> 
+                            </div>                      
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic2}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic3}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic4}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic1}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/media/{{data.plot_pic1}}" alt="">
+                        </div>
+                        {% comment %} <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption> {% endcomment %}
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="/media/{{data.plot_pic1}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="/media/{{data.plot_pic2}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="/media/{{data.plot_pic3}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="/media/{{data.plot_pic4}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-5"><img src="/media/{{data.plot_pic5}}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-6"><img src="/media/{{data.plot_pic1}}" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{%endblock%}

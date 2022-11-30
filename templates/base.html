@@ -16,7 +16,8 @@
 
 
 body {
-    background: rgb(47, 185, 155);
+    background:orange;
+  
 }
 
 header {
@@ -477,7 +478,8 @@ nav {
 }
 {% comment %} css for showing plot and lands in details{% endcomment %}
 section {
-  background: rgb(47, 185, 155);
+  {% comment %} background:red; {% endcomment %}
+  
   padding: 50px 0;
 }
 .container {
@@ -705,18 +707,26 @@ body {
 <li><a href='#'>ABOUT</a></li>
 <li><a href='#'>ADD PROPERTY</a>
    <ul>
-      <li><a href="{% url 'addland' %}">Land</a>
+      <li><a href="{% url 'addland' %}"> Add Land</a>
          
       </li>
-      <li><a href="{% url 'addplot' %}">Plot</a>
+      <li><a href="{% url 'addplot' %}"> Add Plot</a>
 
       </li>
    </ul>
 </li>
 <li><a href='#'>BIO</a></li>
+<li><a href='#'>All Property</a>
+   <ul>
+      <li><a href="{%url 'allland'%}">All lands</a></li>
+
+      <li><a href="{% url 'allplot' %}"> All Plots</a></li>
+   </ul>
+</li>
+
 <li><a href="{%url 'allland'%}">All lands</a></li>
 <li><a href="/">GALLERY</a></li>
-<li><a href='#'>CONTACT</a></li>
+<li><a href="{%url 'contact'%}">CONTACT</a></li>
 <li style="margin-left: 300px;"><a href='#'>LOGIN</a></li>
 <!-- <li><a href='#'>LOG OUT</a></li> -->
 

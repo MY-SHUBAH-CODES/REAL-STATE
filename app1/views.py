@@ -27,12 +27,34 @@ def addplot(request):
         return render(request,'add_plot.html',{'form':Addplotform})
 
 
-def landdetails(request,pk):
-    data=Addland.objects.get(id=pk)
-    return render(request,'landdetails.html',{'data':data})
-
 def allland(requst):
     data=Addland.objects.all()
     for i in data:
         print(i.id)
     return render(requst,'all_lands.html',{'data':data})
+
+def landdetails(request,pk):
+    data=Addland.objects.get(id=pk)
+    return render(request,'landdetails.html',{'data':data})
+
+def allplot(requst):
+    data=Addplot.objects.all()
+    for i in data:
+        print(i.id)
+    return render(requst,'all_plots.html',{'data':data})
+
+def plotdetails(request,pk):
+    data=Addplot.objects.get(id=pk)
+    return render(request,'plotdetails.html',{'data':data})
+
+def contact(request):
+    return render(request,'contact.html')
+
+def developer(request):
+    return render(request,'index.html')
+
+
+
+
+
+
